@@ -21,13 +21,13 @@ def google_search(item):
     # to search
     # query = "Geeksforgeeks"
 
-    search = []
+    list = []
 
     for j in search(item, tld="co.in", num=10, stop=10, pause=2):
     	# print(j)
-        search.append(j)
+        list.append(j)
 
-    return search
+    return list
 
 
 def analyse_entity(text):
