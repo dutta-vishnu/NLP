@@ -23,7 +23,7 @@ def google_search(item):
 
     list = []
 
-    for j in search(item, tld="co.in", num=10, stop=10, pause=2):
+    for j in search(item, tld="com", num=10, stop=10, pause=2):
     	# print(j)
         list.append(j)
 
