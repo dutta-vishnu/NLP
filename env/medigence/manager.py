@@ -69,9 +69,9 @@ def get_text_from_url(URL):
     
     res = requests.get(url,verify=False)
 
-    soup = bs(res.content,'html.parser').text
+    soup = res.content
 
-    soup = soup.replace('\n','').replace('\t','')
+    # soup = soup.replace('\n','').replace('\t','')
 
     return soup
 
